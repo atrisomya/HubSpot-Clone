@@ -1,0 +1,59 @@
+#orangepart {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,92,53);
+    font-family: Lexend Deca,sans-serif;
+    padding: 40px 0px 40px 80px;
+}
+#orangepart > div:first-child {
+    width: 55%;
+    color: white;
+}
+#orangepart > div:nth-child(2){
+    width: 45%;
+    display: block;
+    margin-right: 0px;
+}
+#orangepart img {
+    width: 100%;
+}
+
+#orangepart h1 {
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#orangepart p {
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+#orangepart button {
+    border: none;
+    background-color: white;
+    color: #2e475d;
+    padding: 20px;
+    font-family: Lexend Deca,sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#gridsec > h1, #gridsec > p {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+#gridpart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 80px;
+}
+
+
+#gridpart img{
+    width: 5%;
+}
+
+
