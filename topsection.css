@@ -1,0 +1,62 @@
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #top{
+            overflow: hidden;
+            font-family: Lexend Deca,sans-serif;
+            color: #2e475d;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            font-size: 13px;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+        }
+        #topSection{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 100px 10px 50px;
+        }
+
+        #topSection > div:nth-child(1) {
+            width: 10%;
+        }
+
+        #topSection > div:nth-child(2) {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #Navbar {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 100px 10px 50px;
+            padding-bottom: 0px;
+            font-size: 19px;
+        }
+
+        #Navbar div:nth-child(1) {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #Navbar img {
+            width: 19%;
+        }
+        #Navbar button {
+            background-color: rgb(255,92,53);
+            color: white;
+            width: 210px;
+            padding: 11px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        #Navbar button:hover {
+            cursor: pointer;
+            background-color: rgb(245, 245, 245);
+            color: #b5cce1;
+        }
