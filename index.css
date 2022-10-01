@@ -4,6 +4,7 @@
     background-color: rgb(255,92,53);
     font-family: Lexend Deca,sans-serif;
     padding: 40px 0px 40px 80px;
+    z-index: 0;
 }
 #orangepart > div:first-child {
     width: 55%;
@@ -39,21 +40,259 @@
     border-radius: 5px;
 }
 
-#gridsec > h1, #gridsec > p {
-    width: 65%;
+#orangepart button:hover{
+    background-color: rgb(216, 139, 120);
+    color: white;
+}
+
+#gridsec {
+    margin-top: 30px;
+    color: #2e475d;
+}
+
+#gridsec > p {
+    width: 60%;
     margin: auto;
+    text-align: left;
+    font-family: Lexend Deca,sans-serif;
+    margin-top: 30px;
+    line-height: 25px;
+}
+#gridsec > h1 {
     text-align: center;
+    font-family: Lexend Deca, sans-serif;
+}
+#gridpart p{
+    font-size: 14px;
+    color: #2e475d;
 }
 #gridpart {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 32px;
     padding: 80px;
+    font-family:Lexend Deca,sans-serif;
+    line-height: 20px;
+}
+
+#gridpart > div {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:  35px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#gridpart > div:hover {
+    box-shadow: rgba(81, 142, 223, 0.2) 0px 7px 29px 0px;
 }
 
 
 #gridpart img{
-    width: 5%;
+    width: 10%;
+}
+#gridpart > div > img + h2 {
+    display: inline;
+    margin: 8px;
+    font-size: 22px;
 }
 
+#gridpart div > div > i + p {
+    display: inline;
+    font-size: 14px;
+}
 
+#gridpart > div > div {
+    margin: 14px;
+}
+
+#gridpart hr {
+    margin: 40px 0px;
+}
+
+#gridpart > div > button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255,92,53);
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+#gridpart > div > button:hover{
+    background-color: rgb(216, 139, 120);
+    color: white;
+}
+
+#greengrad {
+    background: rgb(36,186,163);
+    background: linear-gradient(90deg, rgba(36,186,163,1) 40%, rgba(74,177,115,1) 60%);
+    font-family: Lexend Deca, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+#greengrad > h1 {
+    width: 57%;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: 600;
+}
+#greengrad > p {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+#greengrad > div {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#greengrad > div > div {
+    padding: 40px;
+}
+
+#greengrad > div > div:nth-child(1) > img {
+    width: 15%;
+}
+
+#greengrad > div > div:nth-child(1) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(2) > img {
+    width: 28%;
+}
+
+#greengrad > div > div:nth-child(2) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(3) > img {
+    width: 45%;
+}
+
+#greengrad > div > div:nth-child(3) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(4) > img {
+    width: 45%;
+}
+
+#greengrad > div > div:nth-child(4) {
+    border-bottom: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(5) > img {
+    width: 60%;
+}
+
+#greengrad > div > div:nth-child(5) {
+    border-right: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(6) > img {
+    width: 10%;
+}
+
+#greengrad > div > div:nth-child(6) {
+    border-right: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(7) > img {
+    width: 10%;
+}
+
+#greengrad > div > div:nth-child(7) {
+    border-right: 1px solid white;
+}
+
+#greengrad > div > div:nth-child(8) > img {
+    width: 10%;
+}
+
+#bot1 {
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lexend Deca, sans-serif;
+    color: #2e475d;
+}
+
+#bot1 > div:nth-child(1) {
+    width: 40%;
+}
+
+#bot1 > div:nth-child(2) {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+#bot1 h3 {
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+#bot1 > div:nth-child(2) > img{
+    width: 80%;
+    padding: 20px;
+}
+
+#bot2 {
+    padding: 20px 100px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lexend Deca, sans-serif;
+    color: #2e475d;
+}
+
+#bot2 button {
+    background-color: rgb(255,92,53);
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 0px;
+    font-family: Lexend Deca, sans-serif;
+}
+
+#bot2 button:hover{
+    background-color: rgb(216, 139, 120);
+    color: white;
+}
+
+#bot2 > img {
+    width: 40%;
+}
+
+#bot2 > div {
+    padding-top: 80px;
+} 
+
+#bot2 > div > h1, #bot2 > div > p, #bot2 > div > button {
+    margin: 30px;
+}
+
+#bot2 div > p:first-child {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#bot2 p:last-child {
+    font-size: 14px;
+    font-weight: bolder;
+}
