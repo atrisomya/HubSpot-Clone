@@ -1,0 +1,87 @@
+#payg {
+    text-align: center;
+    font-family: Lexend Deca, sans-serif;
+}
+
+#topbox {
+    background-color: teal;
+    padding: 70px;
+    color: white;
+}
+
+#promo {
+    width: 25%;
+    height: 25px;
+    margin: auto;
+}
+
+#apply {
+    width: 14%;
+    height: 35px;
+    font-family: Lexend Deca, sans-serif;
+    border: none;
+    color: white;
+    background-color: rgb(255,92,53);
+    border-radius: 5px;
+}
+
+#paybox {
+    text-align: left;
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+h3 {
+    text-align: center;
+}
+#paybox input {
+    width: 60%;
+    margin: 15px;
+    height: 25px;
+}
+
+select {
+    height: 25px;
+    width: 35%;
+}
+
+#paybox > form > input:last-child {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    height: 35px;
+    font-family: Lexend Deca, sans-serif;
+    border: none;
+    color: white;
+    background-color: rgb(255,92,53);
+    border-radius: 5px;
+}
+#paybox > form > input:last-child:hover {
+    background-color: rgb(230, 120, 93);
+}
+
+@media all and (min-width:320px) and (max-width:1023px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    #apply{
+        width: 25%;
+        height: 40px;
+        margin: auto;
+    }
+    #promo {
+        width: 70%;
+        height: 35px;
+    }
+    #paybox {
+        font-size: 15px;
+        width: 80%;
+        padding: 5px;
+        border:none;
+    }
+}
