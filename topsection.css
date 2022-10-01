@@ -10,13 +10,13 @@
             font-size: 13px;
             position: sticky;
             background-color: white;
-            width: 95%;
+            width: 100%;
         }
         #topSection{
-            width: 100%;
+            width: 90%;
             display: flex;
             justify-content: space-between;
-            margin: 10px 70px 10px 30px;
+            margin: 10px 30px 10px 30px;
         }
 
         #topSection > div:nth-child(1) {
@@ -32,20 +32,20 @@
         #Navbar {
             display: flex;
             justify-content: space-between;
-            margin: 10px 70px 10px 30px;
+            margin: 10px 30px 10px 30px;
             padding-bottom: 0px;
             font-size: 16px;
-            position: relative;
-            width: 100%;
+            width: 90%;
+            font-size: 18px;
         }
 
         #Navbar div:nth-child(1) {
             width: 40%;
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
         }
         #Navbar img {
-            width: 20%;
+            width: 50%;
         }
         #Navbar button {
             background-color: rgb(255,92,53);
@@ -65,7 +65,11 @@
 
         #Navbar li {
             list-style: none;
+        }
+
+        #Navbar > div > a {
             font-size: 18px;
+            margin-top: -2px;
         }
 
         #dropdown:hover {
@@ -118,6 +122,7 @@
             }
             #Navbar {
                 margin: 20px;
+                font-size: 18px;
             }
             #Navbar > div:nth-child(1) {
                 width: 70%;
@@ -131,24 +136,27 @@
             }
         }
 
-        @media all and (min-width:320) and (max-width:767) {
+        @media all and (min-width:420px) and (max-width:767px) {
             #top {
-                width: 100%;
+                width: 98%;
             }
             #topsection {
-                width: 100%;
+                width: 98%;
             }
             #Navbar {
-                width: 100%;
+                width: 98%;
+                font-size: 14px;
+                display: flex;
             }
             #Navbar > div:nth-child(1) {
                 width: 70%;
                 gap: 8px;
                 margin-right: 10px;
-                border: 1px solid black;
             }
             #Navbar button {
                 width: 100%;
+                width: 70%;
+                font-size: 14px;
                 margin-left: 10px;
                 margin-right: 10px;
             }
@@ -156,4 +164,7 @@
                 padding-right: 20px;
                 font-size: 14px;
             } 
+            #Navbar img {
+                width: 35%;
+            }
         }

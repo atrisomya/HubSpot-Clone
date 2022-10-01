@@ -222,15 +222,15 @@
 }
 
 #bot1 {
-    padding: 70px;
+    padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: Lexend Deca, sans-serif;
     color: #2e475d;
 }
 
 #bot1 > div:nth-child(1) {
-    width: 40%;
+    width: 20%;
 }
 
 #bot1 > div:nth-child(2) {
@@ -246,7 +246,7 @@
 }
 
 #bot1 > div:nth-child(2) > img{
-    width: 80%;
+    width: 100%;
     padding: 20px;
 }
 
@@ -295,4 +295,127 @@
 #bot2 p:last-child {
     font-size: 14px;
     font-weight: bolder;
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    #gridpart {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #greengrad > div {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #greengrad > div > div:nth-child(1) {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    #greengrad > div > div:nth-child(2) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(3) {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    #greengrad > div > div:nth-child(4) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(5) {
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    #greengrad > div > div:nth-child(6) {
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    #greengrad > div > div:nth-child(7) {
+        border-right: 1px solid white;
+        border-bottom: none;
+    }
+    #greengrad > div > div:nth-child(8) {
+        border-bottom: none;
+        border-right: none;
+    }
+
+    #bot1 > div:nth-child(2) > img {
+        width: 100%;
+        padding: 0px;
+    }
+    #bot2 {
+        padding: 0px 10px 10px 10px;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:767px) {
+    #gridpart {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #greengrad > div {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #greengrad > div > div:nth-child(1) {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(2) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(3) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(4) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(5) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(6) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(7) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #greengrad > div > div:nth-child(8) {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    #bot1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #bot1 > div:nth-child(2) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    #bot1 > div:nth-child(1) {
+        width: 100%;
+    }
+    #bot1 > div:nth-child(2) > img{
+        width: 80%;
+        padding: 40px;
+    }
+    #bot2 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #bot2 > img {
+        width: 90%;
+    }
 }
