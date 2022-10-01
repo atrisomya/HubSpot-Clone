@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+        #container {
+            display: flex;
+            justify-content:space-between;
+            font-family: Lexend Deca, sans-serif;
+            margin-top: -40px;
+        }
+        #left {
+            width: 50%;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        #left > p {
+            font-size: 12px;
+        }
+        #right {
+            padding: 50px;
+            text-align: center;
+        }
+        #right > p:first-child {
+            text-align: end;
+            margin-bottom: 40px;
+        }
+        #right img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+        input {
+            width: 95%;
+            margin: 15px;
+            height: 35px;
+            border: none;
+            border-bottom: 2px solid rgb(0,164,189);
+        }
+        #submit {
+            border: none;
+            background-color: rgb(255,92,53);
+            color: white;
+        }
+        #submit:hover {
+            background-color: rgb(255, 181, 53);
+        }
+        #left > div  {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        @media all and (min-width:768px) and (max-width:1023px) {
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            #left{
+                width: 100%;
+            }
+        }
+        @media all and (min-width:320px) and (max-width:769px) {
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            #left{
+                width: 100%;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <img src="https://static.hsappstatic.net/ui-images/static-2.434/optimized/hubspot-wordmark.svg" alt="Error">
+            <h1>Create your free account</h1>
+            <form action="">
+                <div>
+                    <input type="text" id="firstname" placeholder="First Name">
+                    <input type="text" id="lastname" placeholder="Last Name">
+                </div>    
+                    <input type="email" id="email" placeholder="Email Address">
+                    <input type="text" id="password" placeholder="Password">
+                    <input type="submit" id="submit" value="Sign up">
+            </form>    
+            <p>We’re committed to your privacy. HubSpot uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For more information, check out our Privacy Policy.</p>
+        </div>
+        <div id="right">
+            <p>Have an account? <span> <a href="login.html">Sign in.</a> </span></p>
+            <img src="https://lh3.googleusercontent.com/foDuqbGcoa3x0R91oBoiVWQZ6gWtENxr-pmTSBShCoK_hA6xYzQZ2uXO9KL-fOneprkIH9im6VbKUY1s8N-okiZSmLZH9dDEFQYnu-AQ-_PLeRMe7o-B_KBMom_0SV7rlzbF57cp8bQ=w2400" alt="Error">
+            <h3>HubSpot's CRM is 100% free.</h3>
+            <p>No credit card needed.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", myfun);
+
+    function myfun(event) {
+        event.preventDefault();
+       
+        // let obj = {
+        //     email: form.email.value,
+        //     phone: form.phone.value,
+        //     password: form.password.value,
+        // }
+        let firstname = document.getElementById("firstname").value;
+        let lastname = document.getElementById("lastname").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        localStorage.setItem("firstname", firstname);
+        localStorage.setItem("lastname", lastname);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        alert("Sign Up Successful!");
+    }
+</script>
