@@ -136,33 +136,38 @@
             }
         }
 
-        @media all and (min-width:420px) and (max-width:767px) {
+        @media all and (min-width:320px) and (max-width:767px) {
             #top {
-                width: 98%;
+                width: auto;
             }
-            #topsection {
-                width: 98%;
+            #topSection {
+                width: auto;
+            }
+            #topSection > div:nth-child(2) > p {
+                display: none;
             }
             #Navbar {
-                width: 98%;
-                font-size: 14px;
+                width: auto;
+                font-size: 13px;
                 display: flex;
             }
             #Navbar > div:nth-child(1) {
-                width: 70%;
+                width: 65%;
                 gap: 8px;
                 margin-right: 10px;
             }
             #Navbar button {
+                display: none;
                 width: 100%;
                 width: 70%;
                 font-size: 14px;
                 margin-left: 10px;
                 margin-right: 10px;
             }
-            #Navbar > div > li {
-                padding-right: 20px;
-                font-size: 14px;
+            #Navbar > div > li , #dropdown > li {
+                padding: 10px 20px 10px 10px;
+                font-size: 13px;
+                border: 1px solid black;
             } 
             #Navbar img {
                 width: 35%;
