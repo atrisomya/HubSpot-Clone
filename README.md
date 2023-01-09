@@ -1,4 +1,4 @@
-# bloody-quicksand-2791
+# HubSpot - Clone
 This is a clone of the website HubSpot which is a software platform designed to help your company market and sell more effectively. 
 It was made using HTML, CSS, JavaScript.
 It has following functionalities:
