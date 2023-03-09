@@ -245,7 +245,8 @@
 
     pnow.addEventListener("click", panow);
 
-    function panow() {
+    function panow(event) {
+        event.preventDefault();
         let cardno = document.getElementById("cardno").value;
         let cvv = document.getElementById("cvv").value;
         let month = document.getElementById("month").value;
@@ -256,6 +257,7 @@
         } else {
             alert("Payment Successful");
         }
+        window.location.href="index.html";
     }
 
 </script>
