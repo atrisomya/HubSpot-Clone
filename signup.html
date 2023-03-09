@@ -87,7 +87,7 @@
                     <input type="text" id="lastname" placeholder="Last Name">
                 </div>    
                     <input type="email" id="email" placeholder="Email Address">
-                    <input type="text" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password">
                     <input type="submit" id="submit" value="Sign up">
             </form>    
             <p>We’re committed to your privacy. HubSpot uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time. For more information, check out our Privacy Policy.</p>
@@ -125,5 +125,6 @@
         localStorage.setItem("password", password);
 
         alert("Sign Up Successful!");
+        window.location.href="login.html";
     }
 </script>
